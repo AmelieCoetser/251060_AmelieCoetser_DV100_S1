@@ -1,61 +1,140 @@
-body{
-    margin-left:7%;
-    margin-right: 7%;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #2D0B45;
+    color: white;
+}
 
-.topNav{
-    overflow: hidden;
+/* Header Styling */
+header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e6dde674;
-    border-radius:30px;
-    margin-top: 2%;
+    padding: 20px 7%;  /* Equal padding on both left and right */
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 86%; /* Ensures padding remains consistent within the viewport */
+    left: 7%; /* Centers the nav with respect to padding */
+    top: 5%;
+    z-index: 1000;
+    border-radius: 15px;
 }
 
-.topNav img{
-    margin-left:3%;
-    margin-top:1.5%;
+.logo img {
+    width: 180px;
 }
 
-.topNav a{
-    float: left;
-    padding-top: 1.1%;
-    padding-bottom: 1.1%;
-    padding-left: 1.7%;
-}
-
-.topNavCenter{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex:2;
-    gap:30px;
-    padding-right: 20%;
-    padding-top:1.7%;
-}
-
-.topNavCenter a {
+nav .topNavCenter a {
+    color: white;
     text-decoration: none;
-    font-family:"Poppins",sans-serif;
+    margin: 0 15px;
     font-size: 18px;
+}
+
+nav .topNavCenter a:hover, nav .topNavCenter a.active {
+    color: #ff4b5c;
     font-weight: bold;
-    color:#4d4c4c;
 }
 
-.topNavCenter a.active{
-    color: #ff3b3b;
+.searchChart input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
-.topNavSearch {
-    background: white; /* White background */
-    float: right;
-    border-radius: 20px; /* Rounded edges */
+.hero {
+    position: relative;
+    height: 600px; /* Slightly increased for better proportions */
+    width: 100vw; /* Ensures full width */
+   
+    display: flex;
+    align-items: flex-end; /* Moves content to the bottom */
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 80px; /* More spacing for proper placement */
 }
 
-.topNavSearch p {
-    font-size: 16px;
+/* Hero Content */
+.hero .content {
+    text-align: left; /* Ensures text is aligned left */
+    color: rgb(160, 34, 34);
+    max-width: 600px; /* Restricts text width for better readability */
+}
+
+.hero .content h1 {
+    font-size: 60px; /* Increased size for emphasis */
     font-weight: bold;
-    color: gray;
-    justify-content: end;
+    text-transform: uppercase;
+}
+
+.hero .content p {
+    font-size: 24px; /* More proportional to heading */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+/* Mars Experience Section */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.imgContainer img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.button {
+    background: #ff4b5c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background: #d43f50;
+}
+
+/* Shuttles Section */
+.section {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.textContent h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.imgContent img {
+    width: 500px;
+}
+
+/* Upcoming Trips */
+.divider {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 50px 0;
 }
