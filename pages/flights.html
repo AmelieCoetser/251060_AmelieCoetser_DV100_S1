@@ -9,28 +9,166 @@
 
     <title>Red Planet Ventures</title>
 
-    <link rel="stylesheet" href="css/main.css"> <!--absolute last thing that happens in head tag, rel=relationship -->
+    <link rel="stylesheet" href="../css/main.css"> <!--absolute last thing that happens in head tag, rel=relationship -->
+
 
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
         <div class="topNav">
-            <a href="index.html"><img src="assets/img/logo.png" width=270px></a>
-
-            <div class="topNavCenter">
-                <a href="../index.html">Home</a>
+            <a href="index.html"><img src="assets/img/logo.png" width="270px" alt="Red Planet Ventures"></a>
+            
+            <nav class="topNavCenter">
+                <a href="index.html">Home</a>
                 <a class="active" href="flights.html">Flights</a>
                 <a href="contact.html">Contact</a>
-            </div>
+            </nav>
 
             <div class="topNavSearch">
-                <p>Search</p>
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
             </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>BOOK A FLIGHT</h1>
+    </section>
+
+    <!-- Filter and Sorting -->
+    <div class="filterBar">
+        <button>Filter</button>
+        <span>Showing 1-6 of 23 results</span>
+        <button>Show</button>
+        <button>Short by Default</button>
+    </div>
+
+    <!-- Flight Listings -->
+    <main class="flightListings">
+        
+        <!-- Flight 1 -->
+        <div class="flightCard">
+            <img src="../assets/img/flighhtMars.png" alt="Mars">
+            <div class="flightInfo">
+                <h2>The Classic Mars Experience</h2>
+                <p class="price">R 25,000.00 <span class="discount">R 50,000.00</span></p>
+                <p>⭐⭐⭐⭐⭐ 10 Customer Reviews</p>
+                <p>Embark on a Mars vacation! Visit canyons, ancient relics, and experience the rust-colored landscape of the Red Planet.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
         </div>
 
-    
-    </header>
-    
-        
-    </nav>
+        <!-- Flight 2 -->
+        <div class="flightCard">
+            <img src="../assets/img/flightNeptune.png" alt="Neptune">
+            <div class="flightInfo">
+                <h2>Neptune’s Cosmic Dive</h2>
+                <p class="price">R 45,000.00</p>
+                <p>⭐⭐⭐⭐⭐ 26 Customer Reviews</p>
+                <p>Experience weightlessness aboard "Neptune Voyager" and witness surreal views of swirling clouds and alien ice storms.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flight 3 -->
+        <div class="flightCard">
+            <img src="../assets/img/flightJupiter.png" alt="Jupiter">
+            <div class="flightInfo">
+                <h2>The Giant’s Journey</h2>
+                <p class="price">R 65,000.00</p>
+                <p>⭐⭐⭐⭐⭐ 14 Customer Reviews</p>
+                <p>Embark on a Jupiter voyage! Witness its iconic rings and a dazzling space station experience.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flight 4 -->
+        <div class="flightCard">
+            <img src="../assets/img/flightSaturn.png" alt="Saturn">
+            <div class="flightInfo">
+                <h2>Ring Around a Saturn</h2>
+                <p class="price">R 40,000.00</p>
+                <p>⭐⭐⭐⭐⭐ 16 Customer Reviews</p>
+                <p>Marvel at Saturn’s rings aboard the "Saturn Explorer" and experience breathtaking cosmic adventures.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flight 5 -->
+        <div class="flightCard">
+            <img src="../assets/img/flightUranus.png" alt="Uranus">
+            <div class="flightInfo">
+                <h2>Uranus Uncharted</h2>
+                <p class="price">R 50,000.00</p>
+                <p>⭐⭐⭐⭐⭐ 9 Customer Reviews</p>
+                <p>Explore Uranus' icy atmosphere and mysterious moons on an exclusive zero-gravity cruise.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flight 6 -->
+        <div class="flightCard">
+            <img src="../assets/img/flightMoon.png" alt="Moon">
+            <div class="flightInfo">
+                <h2>Moonlight Meander</h2>
+                <p class="price">R 15,000.00</p>
+                <p>⭐⭐⭐⭐⭐ 8 Customer Reviews</p>
+                <p>Experience a romantic getaway with breathtaking views of Earth from the Moon’s surface.</p>
+                <div class="booking">
+                    <input type="number" value="1">
+                    <button class="bookNow">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerContainer">
+            <img src="../assets/img/logo.png" alt="Red Planet Ventures">
+            <p>Offering unforgettable trips to explore planets in our solar system.</p>
+
+            <div class="footerLinks">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="socialLinks">
+                <h3>Social Media</h3>
+                <a href="#"><img src="../assets/img/smFacebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../assets/img/smInstagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../assets/img/smTicktock.png" alt="TikTok"></a>
+                <a href="#"><img src="../assets/img/smX.png" alt="X"></a>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>© 2024 Open Window | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
